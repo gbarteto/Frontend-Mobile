@@ -20,6 +20,9 @@ export function Sales() {
                 <Image source={sacola} style={styles.imageLogo}></Image>
             </View>
             <Image source={banner} style={styles.image}/>
+            <View style={styles.content}>
+                
+            </View>
         </View>
     )
 }
