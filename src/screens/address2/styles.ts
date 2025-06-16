@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     fontWeight:'bold',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
-    marginBottom: 10,
+    marginBottom: 20,
     marginTop: 10
   },
   content: {
@@ -76,26 +76,5 @@ export const styles = StyleSheet.create({
     width: 50,
     height: 50
   },
-  cities:{
-    flex: 1,
-    paddingTop: 1,
-    paddingLeft: 45,
-    gap: -20,
-    textAlign: 'left',
-    backgroundColor: theme.colors.white,
-    width: '100%'
-  },
-  city:{
-    color: theme.colors.secondary100,
-    fontFamily: theme.fonts.text500,
-    fontSize: 20,
-    textAlign: 'left'
-  },
-  description:{
-    color: theme.colors.primary,
-    fontFamily: theme.fonts.text500,
-    fontSize: 15,
-    textAlign: 'left'
-  }
 
 });

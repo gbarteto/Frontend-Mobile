@@ -28,6 +28,10 @@ export function SignIn() {
    const handleNavigateAddress = () => {
     navigation.navigate("Address");
   };
+
+  const handleNavigateSales = () => {
+    navigation.navigate("Sales");
+  };
   return (
     <View style={styles.container}>
       <Image source={logoSmall} style={styles.imageLogo} resizeMode="stretch" />
@@ -63,7 +67,7 @@ export function SignIn() {
       </View>
 
       <View style={styles.controlsbutons}>
-        <Button title="Continuar" />
+        <Button title="Continuar" onPress={handleNavigateSales}/>
         <Text>{"\n"}</Text>
         <ButtonWhite title="Voltar" onPress={handleNavigateHome}/>
       </View>

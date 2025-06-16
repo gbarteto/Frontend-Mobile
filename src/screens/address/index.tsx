@@ -10,6 +10,7 @@ import { ButtonWhite } from "../../components/ButtonWhite";
 import { useNavigation } from "@react-navigation/native";
 import {Image} from "expo-image";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Input } from 'react-native-elements';
 
 export function Address() {
 
@@ -20,7 +21,7 @@ export function Address() {
     navigation.navigate("SignIn");
   };
   const handleNavigateConfirm = () => {
-    navigation.navigate("Confirm");
+    navigation.navigate("Address2");
   };
   return (
     <SafeAreaView style={styles.container}>
@@ -38,19 +39,48 @@ export function Address() {
           Para Começar,
          insira seu endereço {"\n"}
         </Text>
-        <Text style={styles.label}>E-mail {"\n"}</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Insira seu Endereço"
+        <Text style={styles.label}>{"\n"}</Text>
+        <Input 
+          placeholder="Insira seu endereço"
           placeholderTextColor={theme.colors.primary}
-          maxLength={20}
-        ></TextInput>
+          leftIcon = {{type: 'font-awesome', name: 'paper-plane', color: theme.colors.primary}}
+          leftIconContainerStyle={{ marginRight: 8 }}
+        />
       </View>
+
+      <View style={styles.cities}>
+        <Text style={styles.city}>São Paulo, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+      <View style={styles.cities}>
+        <Text style={styles.city}>São Bernardo do Campo, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+
+      <View style={styles.cities}>
+        <Text style={styles.city}>Guarulhos, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+
+      <View style={styles.cities}>
+        <Text style={styles.city}>Osasco, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+
+      <View style={styles.cities}>
+        <Text style={styles.city}>Santo André, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+
+      <View style={styles.cities}>
+        <Text style={styles.city}>São Caetano do Sul, São Paulo, Brasil{"\n"}</Text>
+        <Text style={styles.description}>Localização Atual{"\n"}</Text>
+      </View>
+
 
       <View style={styles.controlsbutons}>
         <Button title="Continuar"  onPress={handleNavigateConfirm} />
         <Text>{"\n"}</Text>
-        <ButtonWhite title="Retornar" onPress={handleNavigateHome}/>
       </View>
       
     </SafeAreaView>

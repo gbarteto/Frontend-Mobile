@@ -11,11 +11,17 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
     width: '100%'
   },
+    image: {
+    width: '70%',
+    height: 250,  
+    marginTop: 120  
+  },
+  
   label: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text500,
     fontSize: 15,
-    textAlign: 'left',
+    textAlign: 'center',
     fontWeight: 'bold'
   },
   input: {
@@ -56,9 +62,8 @@ export const styles = StyleSheet.create({
     lineHeight: 40
   },
   imageLogo: {
-    width: "100%",
-    height: 30,
-    marginTop: 0
+    marginTop: 0,
+    marginBottom: 15
   },
   linha: {
     marginTop: 15,
@@ -71,31 +76,6 @@ export const styles = StyleSheet.create({
     marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
-  },
-  imageVoltar: {
-    width: 50,
-    height: 50
-  },
-  cities:{
-    flex: 1,
-    paddingTop: 1,
-    paddingLeft: 45,
-    gap: -20,
-    textAlign: 'left',
-    backgroundColor: theme.colors.white,
-    width: '100%'
-  },
-  city:{
-    color: theme.colors.secondary100,
-    fontFamily: theme.fonts.text500,
-    fontSize: 20,
-    textAlign: 'left'
-  },
-  description:{
-    color: theme.colors.primary,
-    fontFamily: theme.fonts.text500,
-    fontSize: 15,
-    textAlign: 'left'
   }
 
 });

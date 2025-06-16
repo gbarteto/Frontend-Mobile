@@ -18,12 +18,17 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
     fontWeight: 'bold'
   },
+  image: {
+    width: '65%',
+    height: 275,
+    borderRadius: 275 / 2,
+    zIndex: 1,
+  },
   input: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text400,
-    fontSize: 25,
-    textAlign: 'center',
-    fontWeight:'bold',
+    fontSize: 15,
+    textAlign: 'left',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
@@ -56,46 +61,45 @@ export const styles = StyleSheet.create({
     lineHeight: 40
   },
   imageLogo: {
-    width: "100%",
-    height: 30,
-    marginTop: 0
+    marginTop: 0,
+    marginBottom: 15
   },
   linha: {
     marginTop: 15,
     marginBottom: 15
   },
   subtitle: {
-    color: theme.colors.heading,
+    color: theme.colors.text,
     fontSize: 15,
     textAlign: 'center',
+    marginTop: 20,
     marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
   },
-  imageVoltar: {
-    width: 50,
-    height: 50
-  },
-  cities:{
-    flex: 1,
-    paddingTop: 1,
-    paddingLeft: 45,
-    gap: -20,
-    textAlign: 'left',
-    backgroundColor: theme.colors.white,
-    width: '100%'
-  },
-  city:{
-    color: theme.colors.secondary100,
-    fontFamily: theme.fonts.text500,
-    fontSize: 20,
-    textAlign: 'left'
-  },
-  description:{
-    color: theme.colors.primary,
-    fontFamily: theme.fonts.text500,
+  city: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
     fontSize: 15,
-    textAlign: 'left'
-  }
-
+    fontWeight: 'bold',
+    textAlign: 'left',
+    marginBottom: 10
+  },
+  location: {
+    color: theme.colors.primary,
+    fontFamily: theme.fonts.text400,
+    fontSize: 12,
+    textAlign: 'left', 
+    marginBottom: 15
+  },
+  city2: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    marginBottom: 10,
+    borderBottomColor: theme.colors.primary,
+    borderBottomWidth: 2
+  },
 });
