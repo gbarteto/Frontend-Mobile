@@ -11,13 +11,14 @@ interface Props {
 const HomeSection = ({ title = 'Notebooks', data = [] }: Props) => {
   return (
     <View>
-      <View>
-        <Text>{title}</Text>
+      <View style={{marginVertical: 10, marginHorizontal: 5, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end'}}>
+        <Text style={{fontSize:18}}>{title}</Text>
         <TouchableOpacity>
           <Text>Ver tudo</Text>
         </TouchableOpacity>
       </View>
       <FlatList
+        style={{ flexGrow: 0, marginBottom: 10 }}
         data={data}
         horizontal
         showsHorizontalScrollIndicator={false}

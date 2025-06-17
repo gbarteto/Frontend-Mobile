@@ -36,9 +36,11 @@ export const styles = StyleSheet.create({
     marginTop: 10
   },
   content: {
+    flex: 1,
     marginTop: 0,
     width: '100%',
-    paddingHorizontal: 35
+    paddingHorizontal: 35,
+    paddingBottom: 20
   },
   controlsbutons: {
     marginTop: 30,
@@ -77,40 +79,18 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title500,
     lineHeight: 25
   },
-  carroussel: {
-    width: '100%',
-    paddingVertical: 10,
-    marginTop: 20
-  },
-  carrousseTitle: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-end'
-  },
-  carrousselItems:{
-    flexDirection: 'row',
-    gap: 10,
-    width: '100%',
-    marginTop: 20,
-  },
-  carrousselItem: {
-    height: 200,
-    padding: 10,
-    alignItems: 'center'
-  },
-  carrousselImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 10,
-    marginBottom: 10
-  },
   footer:{
     width: '100%',
-    paddingHorizontal: 1,
-    marginTop: 20,
-    marginBottom: 20,
+    position: 'absolute',
+    bottom: 0,
+    paddingBottom: 20,
+    paddingTop: 10,
+    marginHorizontal: 20,
+    borderRadius: 20,
+    flexDirection: 'row',
     backgroundColor: theme.colors.secondary100,
+    alignItems: 'flex-end',
+    justifyContent: 'space-around',
   }
 
 });
