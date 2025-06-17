@@ -6,15 +6,15 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 40,
+    paddingTop: 25,
     alignItems: 'center',
     backgroundColor: theme.colors.white,
     width: '100%'
   },
     image: {
-    width: '70%',
-    height: 250,  
-    marginTop: 120  
+    width: '100%',
+    height: 200,
+    marginTop: 15
   },
   
   label: {
@@ -76,6 +76,41 @@ export const styles = StyleSheet.create({
     marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
+  },
+  carroussel: {
+    width: '100%',
+    paddingVertical: 10,
+    marginTop: 20
+  },
+  carrousseTitle: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end'
+  },
+  carrousselItems:{
+    flexDirection: 'row',
+    gap: 10,
+    width: '100%',
+    marginTop: 20,
+  },
+  carrousselItem: {
+    height: 200,
+    padding: 10,
+    alignItems: 'center'
+  },
+  carrousselImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+    marginBottom: 10
+  },
+  footer:{
+    width: '100%',
+    paddingHorizontal: 1,
+    marginTop: 20,
+    marginBottom: 20,
+    backgroundColor: theme.colors.secondary100,
   }
 
 });
