@@ -80,17 +80,22 @@ export const styles = StyleSheet.create({
     lineHeight: 25
   },
   footer:{
-    width: '100%',
+    width: '97%',
+    height: 70,
     position: 'absolute',
     bottom: 0,
     paddingBottom: 20,
     paddingTop: 10,
-    marginHorizontal: 20,
+    marginBottom: 20,
     borderRadius: 20,
     flexDirection: 'row',
     backgroundColor: theme.colors.secondary100,
     alignItems: 'flex-end',
     justifyContent: 'space-around',
+  },
+  icon:{
+    width: 30,
+    height: 30
   }
 
 });

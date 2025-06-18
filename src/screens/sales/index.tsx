@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { ScrollView,View, Text, Image } from "react-native";
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
 import sacola from "../../../assets/sacola.png";
@@ -14,6 +14,7 @@ import foto from "../../../assets/perfil.png";
 
 import HomeSection from "../../components/HomeSection";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { LinearGradient } from "expo-linear-gradient";
 
 const PROCESSADORES = [ryzen7, ryzen7, ryzen7, ryzen7, ryzen7];
 const FONES = [fone, fone, fone, fone, fone];
@@ -33,18 +34,25 @@ export function Sales() {
             <Text style={styles.title}>Home</Text>
             <Image source={sacola} style={styles.imageLogo}></Image>
          </View>
+         <ScrollView
+            showsVerticalScrollIndicator={false}
+         >
          <Image source={banner} style={styles.image} resizeMode="cover" />
 
          <HomeSection data={MACBOOKS} />
          <HomeSection data={PROCESSADORES} title="Processadores" />
          <HomeSection data={FONES} title="Fones" />
-
-         <View style={styles.footer}>
-            <Image style={{width: 23}} source={home} />
-            <Image style={{width: 23, backgroundColor: '#ff0000'}}  source={icon1} />
-            <Image style={{width: 23}}  source={icon2} />
-            <Image style={{width: 23, backgroundColor: '#ff0000'}}  source={foto} />
-         </View>
+      </ScrollView>
+         <LinearGradient 
+            colors={['#8628E2', '#6C16E1', '#5205E0']}
+            style={styles.footer}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}>
+            <Image style={styles.icon} source={home} />
+            <Image style={styles.icon}  source={icon1} />
+            <Image style={styles.icon}  source={icon2} />
+            <Image style={styles.icon}  source={foto} />
+         </LinearGradient>
       
       </SafeAreaView>
    );
